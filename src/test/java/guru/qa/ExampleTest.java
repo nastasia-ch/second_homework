@@ -7,12 +7,12 @@ public class ExampleTest {
 
     @Test
     void exampleTest1() {
-        Assertions.assertTrue(10>0);
+        Assertions.assertFalse(10<0);
     }
 
     @Test
     void exampleTest2() {
-        Assertions.assertTrue(5>3);
+        Assertions.assertFalse(5<3);
     }
 
 }
