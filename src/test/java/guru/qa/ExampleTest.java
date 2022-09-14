@@ -3,16 +3,18 @@ package guru.qa;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.Random;
+
 public class ExampleTest {
 
     @Test
     void exampleTest1() {
-        Assertions.assertTrue(10>0);
+        Assertions.assertTrue(new Random().nextInt() >0);
     }
 
     @Test
     void exampleTest2() {
-        Assertions.assertTrue(5>3);
+        Assertions.assertTrue(new Random().nextInt()>3);
     }
 
 }
